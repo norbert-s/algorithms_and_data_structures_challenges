@@ -52,7 +52,7 @@ public class TwoArraysIntersectionII {
 
         return tomb;
     }
-    
+
     //https://leetcode.com/problems/intersection-of-two-arrays-ii/solutions/410344/intersection-of-two-arrays-ii/
     //lc official
     public int[] intersectOfficial(int[] nums1, int[] nums2) {
