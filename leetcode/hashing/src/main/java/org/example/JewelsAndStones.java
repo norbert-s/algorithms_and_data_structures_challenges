@@ -4,7 +4,6 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class JewelsAndStones {
-    //mine accepted
     public int numJewelsInStones(String jewels, String stones) {
         Set<String> set = new HashSet<>();
         for(int i=0;i<jewels.length();i++){

@@ -1,8 +1,6 @@
 package org.example.two_sum;
 
-import org.example.hashmap.MyHashMap;
-
-import java.util.*;
+import java.util.Arrays;
 
 public class TwoSum {
 
@@ -10,6 +8,7 @@ public class TwoSum {
        int [] arr = {3,2,4};
        int target = 7;
        Arrays.stream(twoSumQuadratic(arr,target)).forEach(System.out::println);
+
     }
 
     //mine correct
@@ -36,4 +35,5 @@ public class TwoSum {
         return tomb;
 
     }
+
 }

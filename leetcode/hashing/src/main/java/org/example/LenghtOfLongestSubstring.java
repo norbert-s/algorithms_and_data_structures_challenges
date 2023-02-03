@@ -1,6 +1,7 @@
 package org.example;
 
-import java.util.*;
+import java.util.LinkedHashSet;
+import java.util.Set;
 
 public class LenghtOfLongestSubstring {
     public static void main(String[]args){
@@ -9,9 +10,10 @@ public class LenghtOfLongestSubstring {
         String str1 = "jbpnbwwd";
 
         System.out.println(lengthOfLongestSubstring(str1));
+
     }
 
-    //mine accepted
+    //mine
     public static int lengthOfLongestSubstring(String s) {
         Set<Character> set = new LinkedHashSet<>();
 

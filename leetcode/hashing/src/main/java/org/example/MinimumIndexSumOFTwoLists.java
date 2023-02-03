@@ -1,7 +1,6 @@
 package org.example;
 
 import java.util.*;
-import java.util.concurrent.atomic.AtomicReference;
 
 public class MinimumIndexSumOFTwoLists {
     public static void main(String[] args) {
@@ -10,8 +9,7 @@ public class MinimumIndexSumOFTwoLists {
         //Arrays.stream(findRestaurant(list1,list2)).forEach(System.out::println);
     }
 
-
-    //mine Accepted
+    //mine
     public static String[] _findRestaurant(String[] list1, String[] list2) {
         Map<String,Integer> map = new HashMap<>();
         for(int i=0;i<list1.length;i++){

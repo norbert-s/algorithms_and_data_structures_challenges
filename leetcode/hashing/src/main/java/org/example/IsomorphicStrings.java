@@ -4,14 +4,14 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class IsomorphicStrings {
-    public static void main(String[] args) {
-        //String []str = {"eat","tea","tan","ate","nat","bat"};
-        String s1 = "bobi";
-        String s2 = "babu";
-        System.out.println(isIsomorphic(s1,s2));
-    }
 
-    //mine accepted
+    public static void main(String[]args){
+        String str1 = "asdfg";
+        String str2 = "sdfgh";
+       // isIsomorphicTransformation(str1,str2);
+
+
+    }
     public static boolean isIsomorphic(String s, String t) {
         if(s.length()!=t.length())return false;
         Map<String,Integer> map = new HashMap<>();
