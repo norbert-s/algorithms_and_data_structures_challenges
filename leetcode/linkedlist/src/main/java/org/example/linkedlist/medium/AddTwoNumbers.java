@@ -1,4 +1,7 @@
-package org.example.linkedlist;
+package org.example.linkedlist.medium;
+
+import org.example.linkedlist.LinkedList;
+import org.example.linkedlist.ListNode;
 
 public class AddTwoNumbers {
     public static void main(String[] args) {
@@ -16,7 +19,7 @@ public class AddTwoNumbers {
         ListNode list3 = addTwoNumbers.addTwoNumbers(list1.getHead(), list2.getHead());
         list1.print(list3);
     }
-
+    //https://leetcode.com/problems/add-two-numbers/description/
     //accepted
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
 
