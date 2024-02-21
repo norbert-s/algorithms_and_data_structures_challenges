@@ -7,13 +7,13 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class Permutation {
+    static List<List<Integer>> res = new ArrayList<>();
+    static List<Integer> list= new ArrayList<>();
 
     public static void main(String[]args){
         int nums[] = {1,2,3};
         System.out.println(permute(nums));
     }
-    static List<List<Integer>> res = new ArrayList<>();
-    static List<Integer> list= new ArrayList<>();
 
     public static List<List<Integer>> permute(int[] nums) {
         list = Arrays.stream(nums).mapToObj(s->Integer.valueOf(s)).collect(Collectors.toList());
@@ -29,7 +29,7 @@ public class Permutation {
             return;
         }
         for(int i=index;i<list.size();i++){
-            Collections.swap(list,index,i);
+            Collections.swap(list,i,index);
 
             permuteReq(index+1,list);
 
