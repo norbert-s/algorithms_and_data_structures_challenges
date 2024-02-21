@@ -8,7 +8,6 @@ import modern_java.util.Util;
 import java.util.*;
 import java.util.stream.Collectors;
 
-import static java.util.stream.Collectors.*;
 import static modern_java.util.Util.printOutGeneric;
 
 public class Exercises_1225 {
@@ -25,7 +24,7 @@ public class Exercises_1225 {
 
     //get dishes grouped by type which ha s a calorie>500
     private static Map<Dish.Type, List<Dish>> groupCaloricDishesByType(List<Dish>menu) {
-        return menu.stream().filter(dish -> dish.getCalories() > 500).collect(groupingBy(Dish::getType));
+        return menu.stream().filter(dish -> dish.getCalories() > 500).collect(Collectors.groupingBy(Dish::getType));
 //        return menu.stream()
 //                .collect(Collectors.groupingBy(Dish::getType,
 //                        Collectors.filtering(s->s.getCalories()>500,toList())));
@@ -89,7 +88,7 @@ public class Exercises_1225 {
     //simply all the caloric levels that apply by type
     private static Map<Dish.Type, Set<Grouping.CaloricLevel>> caloricLevelsByType(List<Dish>menu) {
         return menu.stream().collect(
-                groupingBy(Dish::getType, mapping(
+                Collectors.groupingBy(Dish::getType, Collectors.mapping(
                         dish -> {
                             if (dish.getCalories() <= 400) {
                                 return Grouping.CaloricLevel.DIET;
@@ -101,7 +100,7 @@ public class Exercises_1225 {
                                 return Grouping.CaloricLevel.FAT;
                             }
                         },
-                        toSet()
+                        Collectors.toSet()
                 ))
         );
     }

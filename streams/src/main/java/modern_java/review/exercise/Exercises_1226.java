@@ -73,7 +73,7 @@ public class Exercises_1226 {
 
     private static Map<Grouping.CaloricLevel,List<Dish>> dishesByCaloricLevel(List<Dish>menu){
         return menu.stream()
-                .collect(Collectors.groupingBy(byCaloricLevel));
+                .collect(Collectors.groupingBy(byCaloricLevel,Collectors.toList()));
     }
 
     //hard

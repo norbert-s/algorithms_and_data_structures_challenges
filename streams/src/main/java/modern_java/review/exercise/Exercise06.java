@@ -10,16 +10,18 @@ public class Exercise06 {
         String text = "KisEsNagyBetuk";
 
         //my solutions
-        List<Character> listChar =List.of(text.split(""))
+        String listChar =List.of(text.split(""))
                 .stream()
                 .map(s->s.charAt(0))
                 .filter(Character::isUpperCase)
+                .map(s->String.valueOf(s))
                 .peek(System.out::println)
-                .collect(Collectors.toList());
+                .collect(Collectors.joining());
 
         text.chars()
                 .mapToObj(ch -> (char) ch)
                 .filter(Character::isUpperCase)
-                .forEach(System.out::println);
+                .collect(Collectors.toList());
+
     }
 }
