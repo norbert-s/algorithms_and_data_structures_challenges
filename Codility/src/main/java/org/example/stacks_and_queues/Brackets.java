@@ -4,7 +4,6 @@ import java.util.*;
 
 public class Brackets {
     static Stack<Character> queue = new Stack<>();
-    static Stack<Character> queue2 = new Stack<>();
     static Map<Character, Character> map = new HashMap<>();
 
     static Map<Character, Character> map2 = new HashMap<>();
