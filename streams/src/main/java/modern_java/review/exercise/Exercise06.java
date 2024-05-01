@@ -18,10 +18,10 @@ public class Exercise06 {
                 .peek(System.out::println)
                 .collect(Collectors.joining());
 
-        text.chars()
-                .mapToObj(ch -> (char) ch)
-                .filter(Character::isUpperCase)
-                .collect(Collectors.toList());
+//        text.chars()
+//                .mapToObj(ch -> (char) ch)
+//                .filter(Character::isUpperCase)
+//                .collect(Collectors.joining());
 
     }
 }

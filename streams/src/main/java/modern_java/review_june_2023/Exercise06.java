@@ -7,7 +7,7 @@ import java.util.stream.Collectors;
 public class Exercise06 {
     //Write a Stream Expression to find the uppercase characters in a string!
     public static void main(String[]args){
-        String str = "NoRbErT SuSzTeK";
+        String str = "BrIaN TrAcY";
         String newStr = str.chars()
                 .mapToObj(i->(char) i)
                 .filter(i->!Character.isLowerCase(i))

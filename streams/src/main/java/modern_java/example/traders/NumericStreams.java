@@ -23,8 +23,8 @@ public class NumericStreams {
         System.out.println(stream);
         //
         OptionalInt maxCalories = menu.stream()
-            .mapToInt(Dish::getCalories)
-            .max();
+            .mapToInt(Dish::getCalories).max();
+
         System.out.println(maxCalories);
         System.out.println(maxCalories.getAsInt());
         int max = maxCalories.orElse(1); 
